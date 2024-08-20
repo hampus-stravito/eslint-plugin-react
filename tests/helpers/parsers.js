@@ -172,7 +172,7 @@ const parsers = {
           parserOptions: parsers.babelParserOptions(test, features),
         }), '@babel/eslint-parser'),
         tsOld ? addComment(Object.assign({}, test, { parser: parsers.TYPESCRIPT_ESLINT }), 'typescript-eslint') : [],
-        tsNew ? addComment(Object.assign({}, test, { parser: parsers['@TYPESCRIPT_ESLINT'] }), '@typescript-eslint/parser') : []
+        tsNew ? addComment(Object.assign({}, test, { parser: parsers['@TYPESCRIPT_ESLINT'] }), '@typescript-eslint/parser/') : []
       );
     });
 
